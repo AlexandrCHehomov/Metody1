@@ -33,7 +33,7 @@ public class Main {
 
     //3
 
-    public static void task3(int deliveryDistance) {
+    public static int task3(int deliveryDistance) {
         int days = 1;
         if (deliveryDistance >= 0 && deliveryDistance < 20) {
             days = days;
@@ -47,6 +47,7 @@ public class Main {
         }
         System.out.println("Потребуется " + days + " дней");
 
+        return days;
     }
 
     //4
