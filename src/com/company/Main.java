@@ -54,30 +54,31 @@ public class Main {
                     return;
                 }
                 if (vivod) {
-                    System.out.println("Дубликатов нет");
                     return;
                 }
             }
-        } task4(String dublicates = "aabccddefgghiijjkk");
+        } System.out.println("Дубликатов нет");
     }
 
     //5
 
     public static void task5(char[] reverseFullName) {
 
-    }
-    char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
-        if (i==0);
-        System.out.print(reverseFullName[i]);
+            if (i==0);
+            System.out.print(reverseFullName[i]);
+        }
     }
+
     public static void main(String[] args) {
 	// write your code here
 
         task1(2021);
         task2(0, 2014);
         task3(78);
-        task4(String dublicates = "aabccddefgghiijjkk");
-        task5(1)
+        task4("aabccddefgghiijjkk");
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        task5(reverseFullName);
+
     }
 }
