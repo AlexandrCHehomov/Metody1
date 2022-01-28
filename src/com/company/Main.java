@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
     //1
 
@@ -32,13 +34,19 @@ public class Main {
     //3
 
     public static void task3(int deliveryDistance) {
-        if (deliveryDistance > 0 && deliveryDistance < 20) {
-            System.out.println("Потребуется дней 1");
-        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется дней 2");
-        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
-            System.out.println("Потребуется дней 3");
+        int days = 1;
+        if (deliveryDistance >= 0 && deliveryDistance < 20) {
+            days = days;
+        } System.out.println("Потребуется " + days + " дней");
+        if (deliveryDistance >= 20) {
+            days = days + 1;
         }
+        System.out.println("Потребуется " + days + " дней");
+        if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            days = days + 1;
+        }
+        System.out.println("Потребуется " + days + " дней");
+
     }
 
     //4
@@ -64,10 +72,12 @@ public class Main {
 
     public static void task5(char[] reverseFullName) {
 
-        for (int i = reverseFullName.length - 1; i >= 0; i--) {
-            if (i==0);
-            System.out.print(reverseFullName[i]);
+        for (int i = 0; i < reverseFullName.length/2; i++) {
+            char a = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 1];
+            reverseFullName[reverseFullName.length - i - 1] = a;
         }
+        System.out.println(reverseFullName);
     }
 
     public static void main(String[] args) {
@@ -75,9 +85,9 @@ public class Main {
 
         task1(2021);
         task2(0, 2014);
-        task3(78);
+        task3(98);
         task4(" aabccddefgghiijjkk ");
-        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'j', 'n', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         task5(reverseFullName);
 
     }
