@@ -76,7 +76,7 @@ public class Main {
         task1(2021);
         task2(0, 2014);
         task3(78);
-        task4("aabccddefgghiijjkk");
+        task4(" aabccddefgghiijjkk ");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         task5(reverseFullName);
 
